@@ -3,10 +3,18 @@ body {
   font-family: "Ã£Æ’â€™Ã£Æ’Â©Ã£â€šÂ®Ã£Æ’Å½Ã¨Â§â€™Ã£â€šÂ´ Pro W3", "Hiragino Kaku Gothic Pro", Osaka,
     "Ã£Æ’Â¡Ã£â€šÂ¤Ã£Æ’ÂªÃ£â€šÂª", Meiryo, "MS PÃ£â€šÂ´Ã£â€šÂ·Ã£Æ’Æ’Ã£â€šÂ¯", "MS PGothic", farial, helvetica,
     clean, sans-serif;
-  max-width: 43em;
-  margin: auto;
-  background-image: linear-gradient(black, black, white, black, black);
+  background: url('images/IMG_7154.gif') no-repeat center center fixed;
+  background-size: cover;
   background-attachment: fixed;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column; /* Added to make it a column layout */
 }
 
 #banner {
@@ -31,40 +39,38 @@ img {
   max-width: 20em;
   border: 1px solid #777;
 }
+
 img:hover {
-  border: 1px solid purple;
+  border: 1px solid orange;
 }
-.m_box {
-  border: 1px solid purple;
+
+.m_box,
+.m_box_red {
+  border: 1px solid orange;
   margin: 1em;
   background-color: white;
 }
+
 .m_box_red {
-  border: 1px solid purple;
-  margin: 1em;
-  background-color: #ffffee;
+  background-color: orange; /* Change background color to orange */
   text-align: center;
 }
 
-a {
-  color: blue;
-  text-decoration: underline;
-}
-.m_box_bar {
-  background: #d97ada;
-  color: white;
-}
-.m_box_bar_red {
-  background: #800000;
+.box_bar {
+  background: orange; /* Change background color to a shade of purple */
   color: white;
 }
 
-h2.m_box {
-  background-color: #d97ada;
+.m_box_bar_red {
+  background: #800000; /* Change background color to a shade of red */
+  color: white;
 }
+
+h2.m_box,
 h2.box {
-  background-color: #fca;
+  background-color: orange;
 }
+
 p {
   margin: 0.5em;
   margin-left: 1em;
@@ -72,13 +78,14 @@ p {
 }
 
 .box {
-  border: 1px solid purple;
-  color: #d97ada;
+  border: 1px solid orange;
+  color: black;
   margin: 1em;
   background-color: white;
 }
+
 .box_bar {
-  background: #d97ada;
+  background: black;
   color: white;
 }
 
@@ -89,6 +96,7 @@ h2 {
   font-size: 1.1em;
   text-align: center;
 }
+
 h3 {
   margin-left: 0.3em;
   font-size: 1em;
@@ -98,14 +106,17 @@ h3 {
   text-align: center;
   font-weight: bold;
 }
+
 li {
   margin-left: 0.3em;
 }
+
 ul {
   list-style-type: circle;
 }
+
 a:hover {
-  color: #c180c1;
+  color: black;
   text-decoration: underline;
 }
 
@@ -114,7 +125,6 @@ a:hover {
   width: 32%;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
