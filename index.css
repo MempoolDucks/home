@@ -14,7 +14,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  flex-direction: column; /* Added to make it a column layout */
+  flex-direction: column; 
 }
 
 #banner {
@@ -37,38 +37,38 @@ img {
   display: block;
   margin: auto;
   max-width: 20em;
-  border: 1px solid #777;
+  border: 1px solid #ccc;
 }
 
 img:hover {
-  border: 1px solid orange;
+  border: 1px solid #ccc;
 }
 
 .m_box,
 .m_box_red {
-  border: 1px solid orange;
+  border: 1px solid #ccc;
   margin: 1em;
   background-color: white;
 }
 
 .m_box_red {
-  background-color: orange; /* Change background color to orange */
+  background-color:  white;
   text-align: center;
 }
 
 .box_bar {
-  background: orange; /* Change background color to a shade of purple */
+  background:  white;
   color: white;
 }
 
 .m_box_bar_red {
-  background: #800000; /* Change background color to a shade of red */
+  background: #ccc; 
   color: white;
 }
 
 h2.m_box,
 h2.box {
-  background-color: orange;
+  background-color:  white;
 }
 
 p {
@@ -78,7 +78,7 @@ p {
 }
 
 .box {
-  border: 1px solid orange;
+  border: 1px solid white;
   color: black;
   margin: 1em;
   background-color: white;
@@ -144,7 +144,7 @@ div.gallery_item {
 }
 
 .gallery_item img {
-  border: 1px solid #777;
+  border: 1px solid #ccc;
   height: auto;
   width: auto;
   max-width: 80%;
