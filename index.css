@@ -162,8 +162,8 @@ div.desc {
 
 @media only screen and (max-width: 600px) {
   body {
-    background: url('images/IMG_7153_mobile.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background: url('images/IMG_7153_mobile.jpg') no-repeat center center fixed !important;
+    background-size: cover !important;
   }
 
   img {
